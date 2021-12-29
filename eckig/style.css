@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+/*
+ * Minimal CSS reset
+ * variant 3 on http://is.gd/jWUwM1
+ */
+*{vertical-align:baseline;font-weight:inherit;font-family:inherit;font-style:inherit;font-size:100%;border:0 none;outline:0;padding:0;margin:0}
+
+/* Basic formatting */
+html, body {
+	background: #f3f3f3;
+	font-family: Georgia, "Droid Serif", "Times New Roman", Times, serif;
+}
+
+body {
+	font-size: 62.5%;
+}
+html > body {
+	font-size: 10px;
+}
+#OtherLanguages {
+	padding: 0;
+	position: absolute;
+	top: -1.5em;
+	left: 0.8em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+#OtherLanguages a:link, #OtherLanguages a:visited {
+	color: #333;
+}
+#OtherLanguages * {
+	display: inline;
+}
+
+/**
+ * Navigation bar
+ */
+#Navigation {
+	padding: 0;
+	position: absolute;
+	top: -4em;
+	right: 0;
+}
+#Navigation li {
+	display: inline;
+}
+#Navigation li a {
+	font: 1.6em sans-serif;
+	text-decoration: none;
+	float: left;
+	padding: 0.8em;
+	background-color: #444;
+	color: #eee;
+}
+#Navigation li a.active {
+	border-top: 0.8em solid #888;
+	margin-top: -0.8em;
+}
+#Navigation li a:hover {
+	border-top: 0.8em solid #aaa;
+	margin-top: -0.8em;
+	color: #aaa;
+}
+
+/* Seitenkopf */
+#Header {
+	margin: 10em auto 0;
+	width: 85em;
+	background-color: #444;
+	color: #eee;
+	border-bottom: 0;
+	padding: 0.8em;
+	position: relative;
+}
+
+#Header h1 {	
+	font: 4em sans-serif;
+ }
+#Header h1 a:link, #Header h1 a:visited {
+	color: #888;
+	text-decoration: none;
+}
+#Header #Tags {
+	 margin: 1.3em 2em 0.8em;
+	font: 1.6em Georgia,serif;
+}
+
+/**
+ * Content area
+ * @see http://heise.de/ct/ftp/10/09/164/
+ */
+#Content {
+	margin: 0 auto;
+	width: 82.4em;
+	padding: 2em;
+	background: #eee;
+	color: #333;
+	border: 0.1em solid #aaa;
+	border-top: 0;
+	border-bottom: 0;
+}
+#Content p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 1.2em;
+}
+#Content h2 {
+	margin: 1em 0;
+	font-size: 2em;
+}
+#Content h3 {
+	margin: 1em 0;
+	font-size: 1.7em;
+}
+#Content h4 {
+		margin: 1em 0;
+	font-size: 1.5em;
+}
+#Content ul {
+	margin: 1em 0;
+}
+#Content ul li {
+	margin: 0 2em;
+	font-size: 1.4em;
+}
+#Content p {
+	font-size: 1.4em;
+	text-indent: 3em;
+}
+#Content p, #Content h1 {
+	margin: 1em 0;
+}
+#Content h1 {
+	font-weight: normal;
+	font-size: 2em;
+	text-indent: 0;
+	color: #000;
+	margin-bottom: 1.2em;
+}
+#Content p:first-letter {
+	font-size: 2em;
+}
+#Content .NoCapital {
+	 margin: 1em 0;
+}
+#Content .NoCapital, #Content .NoCapital * {
+	text-indent: inherit;
+	font-size: 1.4em;
+}
+#Content .NoCapital:first-letter {
+	font: inherit;
+}
+#Content #aside {
+	float: right;
+	list-style: none;
+}
+#Content #aside li {
+	display: block;
+	margin: .8em;
+	padding: 0;
+	width: 150px;
+}
+#Content #aside li a:link {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+#Content #aside li a:hover {
+	color: #444;
+}
+#Content #aside img {
+	width: 150px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #e97;
+}
+table td {
+	padding: 1px 5px;
+}
+table thead {
+	font: normal 1.4em Helvetica Neue, Helvetica, sans-serif;
+	text-shadow: 0 1px 0 white;
+	color: #666;
+}
+table thead td {
+	text-align: left;
+	border-bottom: 1px solid #f75;
+}
+table tbody td {
+	font-size: 1.2em;
+}
+em {
+	font-style: italic;
+}
+blockquote {
+	padding: 1em 4em 0.8em 4em;
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+cite {
+	display: block;
+	font-size: 0.8em;
+	font-variant: normal;
+	text-align: right;
+	text-transform: capitalize;
+	font-style: italic;
+}
+a:link {
+	color: #900;
+	text-decoration: none;
+}
+a:hover {
+	color: #333;
+}
+a:visited {
+	color: #900;
+}
+.line {
+	border-top: 1px solid #222;
+}
+::-moz-selection {
+	color: #eee;
+	background: #900;
+}
+::selection {
+	color: #eee;
+	background: #900;
+}
+#Footer {
+	margin: 0 auto 2em;
+	width: 83.7em;
+	padding: 1.3em;
+	background: #eee;
+	color: #333;
+	border: 0.1em solid #aaa;
+	border-top: 0;
+}
+#Footer p {
+	text-align: center;
+}
+#Footer p#Pagination {
+	font: 1.4em sans-serif;
+	margin-bottom: 1.3em;
+}
+code {
+	font: 1.2em Inconsolata, Monospace;
+	display: block;
+}
+

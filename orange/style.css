@@ -1,0 +1,149 @@
+
+@import url(../normalize.css);
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #999;
+	font-family: "Source Sans Pro", 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+}
+
+header {
+	display: block;
+	margin: 1.3em auto 0;
+	width: 55em;
+	background: #f6f6f6;
+	border: .1em solid #ccc;
+	border-top: .3em solid #ffa500;
+	border-bottom: none;
+	padding: 1.3em;
+	clear: both;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 28pt;
+	line-height: 32pt;
+	margin: .2em 0 0;
+	padding: 0 .4em 0 0;
+	border-right: 1px solid #ccc;
+	/*font-weight: lighter;*/
+}
+
+h2 {
+	display: inline-block;
+	line-height: 32pt;
+	font-size: 16pt;
+	margin: 0;
+	padding: 0 0 0 .4em;
+	font-weight: lighter;
+}
+
+nav {
+	float: right;
+	display: inline-block;
+}
+nav ul {
+	list-style: none;
+	margin: .7em 0 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin: .3em;
+	padding: 0;
+	font-size: 12pt;
+	position: relative;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+	display: block;
+	margin: 0;
+	padding: .3em;
+	border-bottom: .2em solid #666;
+	color: #666;
+	text-decoration: none;
+}
+
+nav ul li a:active,
+nav ul li a:hover,
+nav ul li a.current {
+	border-bottom-color: #ffa500;
+}
+
+main {
+	margin: 0 auto;
+	width: 55em;
+	padding: 1.3em;
+	background: #f6f6f6;
+	border: .1em solid #ccc;
+	border-top: none;
+	color: #111;
+}
+
+main article {
+	display: block;
+	margin: 0 .6em .4em;
+}
+
+main a:link,
+main a:visited {
+	color: #111;
+}
+
+main a:active,
+main a:hover {
+	color: #444;
+}
+
+article > code {
+	display: block;
+	margin: 1em 0 1em 2em;
+	font: 1.1em "Inconsolata",monospace;
+	font: 0.9em "Source Code Pro",monospace;
+}
+
+code.highlight .comment {
+	font-style: italic;
+	color: #999;
+}
+code.highlight .keyword {
+	font-weight: bold;
+}
+code.highlight .string {
+	color: #444;
+	font-style: italic;
+}
+code.highlight .function {
+	color: #555;
+}
+
+footer {
+	display: block;
+	color: #666;
+	text-align: center;
+	margin: 1.7em 0;
+}
+
+footer p {
+	margin: 0 0 .2em;
+}
+footer p:last-child {
+	margin: 0;
+}
+
+footer a:link,
+footer a:visited {
+	color: #666;
+}
+footer a:active,
+footer a:hover {
+	color: #333;
+}

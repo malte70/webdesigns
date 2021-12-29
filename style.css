@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	font: 16px "Source Serif Pro", serif;
+	color: #111;
+	background: #fff;
+}
+header {
+	margin: 2em 0 0;
+	padding: 1em;
+}
+header h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font: 1.8em "Source Sans Pro", sans-serif;
+	font-weight: 600;
+}
+a:link, a:visited {
+	color: #111;
+}
+a:hover, a:active {
+	color: #2ECC40;
+}
+main {
+	width: 35em;
+	max-width: 100%;
+	margin: 1em auto 0;
+	padding: 0 1em;
+}
+main h3 {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+footer {
+	margin: 1.5em 0 1em;
+	padding: 0;
+	text-align: center;
+	font-size: 0.8em;
+}

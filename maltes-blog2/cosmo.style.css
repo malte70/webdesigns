@@ -1,0 +1,352 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+body {
+	font-size: 16px;
+	background: url(bg.png) top left repeat;
+	border-top: 8px solid #669166;
+}
+/*aside, aside * {
+	font-family: 'Shadows Into Light Two', cursive;
+}*/
+.control-label {
+	font-weight: normal;
+}
+.container {
+	max-width: 850px;
+}
+#header {
+	margin: 0 0 1em;
+	padding: 0;
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+	margin: 2.5em 0 1em;
+}
+h1 a, h1 a:visited {
+	color: #669166;
+}
+#feed {
+	margin: 0 0 1em;
+	padding: 0;
+	text-align: center;
+}
+#follow-links {
+	margin: 1em 0;
+	padding: 0;
+	text-align: center;
+}
+#follow-links a:link,
+#follow-links a:visited {
+	display: inline-block;
+	width: 5em;
+	padding: 0;
+	margin: 0 0.5em;
+}
+footer {
+	margin-top: 1em;
+	text-align: center;
+}
+[role*=main] article {
+	margin: .5em 0 2em 0;
+	border-bottom: 1px solid #999;
+	padding-bottom: 2em;
+}
+[role*=main] article:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+[role*=main] img {
+	max-width: 100%;
+}
+[role*=main] kbd {
+	display: inline-block;
+}
+[role*=main] kbd .key {
+	font: 1em "Inconsolata-g","Inconsolata",monospace;
+	border: 1px solid #999;
+	padding: 3px;
+	margin: 0 2px;
+}
+[role*=main] code {
+	font: 11pt 'Inconsolata', monospace;
+	text-align: left;
+	white-space: pre-line;
+	display: block;
+	margin: 0;
+	background: inherit;
+	color: inherit;
+	word-wrap: break-word;
+}
+[role*=main] p code {
+	text-align: left;
+	display: inline;
+}
+a:link, a:visited {
+	color: #669166;
+}
+a:hover, a:active {
+	color: #3D693D;
+}
+.btn.btn-default {
+	background-color: #669166;
+	color: #eee;
+}
+.btn.btn-default:hover {
+	background-color: #3D693D;
+}
+.full-width {
+	width: 80%;
+}
+
+/*
+ * Custom panel for code
+ * --------------------------------------------------
+ */
+/* green with some dark grey */
+.panel-code {
+	border: none;
+}
+.panel-code > .panel-heading {
+	display: none;
+}
+.panel-code > .panel-body {
+	background: #eee;
+	color: #333;
+}
+
+h5.publishDate {
+	text-align: center;
+	font-size: 12px;
+}
+[role*=main] article {
+	text-align: justify;
+}
+[role*=main] article h3 {
+	text-align: left;
+}
+/*[role*=main] article h4 {
+	text-align: left;
+	border-left: 5px solid #333;
+	padding-left: 7px;
+}*/
+blockquote.footer-quote {
+	text-align: right;
+	border-left: 0 none;
+	border-right: 5px solid #E6E6E6;
+}
+
+.media-list .media .media-body {
+	margin-left: 90px;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+	background-color: #E6E6E6;
+}
+.pagination > li.active > a,
+.pagination > li.active > a:hover,
+.pagination > li.active > span,
+.pagination > li.active > span:hover,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+	background-color: #FFF;
+}
+
+/**
+ * Menu
+ */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	border-width: 0px;
+	border-style: solid;
+	border-color: #333;
+	background-color: rgba(0,0,0,0);
+	transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+}
+.menu.menu-open {
+	height: 100%;
+	border-width: 30px 30px 30px 120px;
+	background-color: rgba(0,0,0,0.3);
+	transition: border-width 0.3s, background-color 0.3s;
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+}
+
+.menu-open .overlay {
+	height: 100%;
+}
+
+.menu-trigger {
+	position: fixed;
+/*	top: 15px;
+	left: 20px;*/
+	top: 30px; /* 120 - 50 / 2 -5 (wegen des Balkens oben)*/
+	left: 35px; /* 120 - 50 / 2 */
+	display: block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+.menu-trigger span {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 4px;
+	margin-top: -2px;
+	background-color: #669166;
+	font-size: 0px;
+	user-select: none;
+	transition: background-color 0.3s;
+}
+
+.menu-open .menu-trigger span {
+	background-color: transparent;
+}
+
+.menu-trigger span:before,
+.menu-trigger span:after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #669166;
+	content: '';
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.menu-trigger span:before {
+	-webkit-transform: translateY(-250%);
+	transform: translateY(-250%);
+}
+ 
+.menu-trigger span:after {
+	-webkit-transform: translateY(250%);
+	transform: translateY(250%);
+}
+
+.menu-open .menu-trigger span:before {
+	-webkit-transform: translateY(0) rotate(45deg);
+	transform: translateY(0) rotate(45deg);
+}
+
+.menu-open .menu-trigger span:after {
+	-webkit-transform: translateY(0) rotate(-45deg);
+	transform: translateY(0) rotate(-45deg);
+}
+.menu-trigger span:hover,
+.menu-trigger span:before:hover,
+.menu-trigger span:after:hover {
+	background-color: #3D693D;
+}
+
+.menu ul {
+	position: fixed;
+	/*top: 75px;*/
+	top: 120px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 120px;
+	list-style: none;
+	backface-visibility: hidden;
+}
+
+.menu ul li,
+.menu ul li a {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.menu ul li {
+	padding: 16px 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+}
+.menu ul li.separator {
+	padding: 16px 0 0;
+}
+@media (max-height: 450px) {
+	.menu ul li {
+		padding: 10px 0;
+	}
+	.menu ul li.separator {
+		padding: 5px 0 0;
+	}
+	.menu ul li.no-display-xs {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.menu ul li:first-child {
+	transform: translate3d(-100%,200%,0);
+}
+ 
+.menu ul li:nth-child(2) {
+	transform: translate3d(-100%,100%,0);
+}
+ 
+.menu ul li:nth-child(3) {
+	transform: translate3d(-100%,0,0);
+}
+ 
+.menu ul li:nth-child(4) {
+	transform: translate3d(-100%,-100%,0);
+}
+ 
+.menu ul li:nth-child(5) {
+	transform: translate3d(-100%,-200%,0);
+}
+
+.menu.menu-open ul li {
+	visibility: visible;
+	opacity: 1;
+	transition: transform 0.3s, opacity 0.3s;
+	transform: translate3d(0,0,0);
+}
+
+.menu ul li a {
+	display: block;
+	outline: none;
+	/*color: transparent;*/
+	text-decoration: none;
+	/*font-size: 0px;*/
+	font-size: 1.3em;
+}
+
+.menu ul li a:before {
+	color: #04a466;
+	font-size: 48px;
+	transition: color 0.2s;
+}
+
+.menu ul li a:hover:before,
+.menu ul li a:focus:before  {
+	color: #fff;
+}
+
+@media screen and (max-height: 31.125em) {
+	.menu ul li a:before {
+		font-size: 32px;
+	}
+}
+#add-comment-form, #comment-form-divider {
+	display: none;
+}

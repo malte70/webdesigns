@@ -1,0 +1,106 @@
+
+@import url(../normalize.css);
+
+body {
+	font: 18px "Source Sans Pro", sans-serif;
+	background: #e6e6e6;
+	color: #777777;
+}
+
+header {
+	display: block;
+	padding: 1.2em;
+	background: #fff;
+	color: #666;
+	height: 5.5em; /* ~100px */
+}
+
+.Wrapper,
+footer > *{
+	margin: 0 auto;
+	width: 45em;
+	max-width: 100%;
+	clear: both;
+}
+
+header h1 {
+	font: 1.8em "Source Serif Pro",serif;
+	margin: 1em 0 0;
+}
+header h1 a:link,
+header h1 a:visited {
+	color: #444;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+}
+header nav ul {
+	float: right;
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+header nav ul li {
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+	width: 7em; /* ~125px */
+}
+header nav ul li a {
+	width: 5.3em; /* ~95px */
+	height: 100%;
+	display: inline-block;
+	padding: .8em;
+	color: #444;
+	text-decoration: none;
+	margin: 0 .5em;
+}
+header nav ul li.active a,
+header nav ul li a:hover {
+	border-bottom: .25em solid #444;
+}
+main h3 {
+	width: 100%;
+	font: 1.5em "Source Serif Pro", serif;
+	border-bottom: .2em solid #777;
+}
+main p {
+	margin: 1em 0;
+	text-align: justify;
+}
+main article > code {
+	display: block;
+	font: 0.9em "Source Code Pro",monospace;
+	margin: 1em 0 1em 1.5em;
+}
+code.highlight .comment {
+	font-style: italic;
+	color: #999;
+}
+code.highlight .keyword {
+	font-weight: bold;
+}
+code.highlight .string {
+	color: #444;
+	font-style: italic;
+}
+code.highlight .function {
+	color: #555;
+}
+a:link,
+a:visited {
+	color: #777;
+}
+a:hover,
+a:active {
+	color: #555;
+}
+footer {
+	text-align: center;
+	margin: 2em 0 1.5em;
+}
+footer p:first-child {
+	border-top: .2em solid #777;
+	padding: 1em 0 .5em;
+}
