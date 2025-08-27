@@ -26,7 +26,7 @@ a:hover, a:active {
 	color: #2ECC40;
 }
 main {
-	width: 35em;
+	width: 50em;
 	max-width: 100%;
 	margin: 1em auto 0;
 	padding: 0 1em;
@@ -34,6 +34,18 @@ main {
 main h3 {
 	font-size: 1.3em;
 	font-weight: 600;
+}
+img.preview {
+    float: right;
+    width: 25%;
+}
+article {
+    margin-bottom: 4em;
+}
+article::after {
+    content: " ";
+    display: block;
+    clear: both;
 }
 footer {
 	margin: 1.5em 0 1em;
