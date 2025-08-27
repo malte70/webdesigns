@@ -1,0 +1,44 @@
+body {
+	color: #111;
+	background: #efefef;
+}
+header {
+	margin: 40px auto 40px;
+	width: 500px;
+}
+h2 {
+	font: 40px "Liberation Sans", serif;
+	font-weight: 400;
+	margin: 35px 10px;
+	text-align: center;
+}
+main {
+	width: 500px;
+	margin: 30px auto 50px;
+}
+ul li {
+	list-style: none;
+}
+.tick-yes {
+	font-weight: bold;
+	color: #0d0;
+	font: 20px sans-serif;
+}
+.tick-no {
+	font-weight: bold;
+	color: #d10;
+	font: 20px sans-serif;
+}
+a:link, a:visited {
+	color: #111;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	color: #d10;
+}
+ul li ul {
+	margin: .4em 0;
+}
+ul li ul li {
+	margin-bottom: .1em;
+}
