@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<title>Startseite</title>
+		
+		<link rel="stylesheet" type="text/css" href="../../normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body id="top">
+		<header>
+			<h1>hello world</h1>
+		</header>
+		<main>
+			<section id="search">
+				<form action="https://google.com/search" method="GET">
+					<input type="hidden" name="hl" value="de">
+					<!--<input type="text" name="q" placeholder="Google-Suche">-->
+					<input type="search" name="q" placeholder="Google-Suche">
+					<button type="submit">Suchen</button>
+				</form>
+			</section>
+		</main>
+		
+		<script type="text/javascript">
+			window.onload = function() {
+				var _useragent = navigator.userAgent;
+				var _lang      = navigator.language.replace("-", "_");
+				var _info      = "\n  == Debug Info ==\n\n"
+					+ "User Agent:\n\t" + _useragent + "\n"
+					+ "Language:\n\t" + _lang + "\n";
+				
+				//console.log("User Agent: "+_useragent);
+				//console.log("Language: "+_lang);
+				console.log(_info);
+			};
+		</script>
+	</body>
+</html>
