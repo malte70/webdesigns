@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/**
+ * colors (got them using GPick and VICE)
+ *
+ * Outer border:
+ *    #0088FF
+ *    #8A79CA
+ *    mean: #4580E5
+ * Inner Background:
+ *    #7155D8
+ *    #54419B
+ *    mean: #634BBA
+ */
+body {
+	background: #8A79CA;
+	color: #8A79CA;
+	/*background: #4580E5;
+	color: #4580E5;*/
+	font: 20px "C64 Pro";
+}
+
+body main {
+	display: block;
+	position: absolute;
+	left:   3em;
+	top:    3em;
+	right:  3em;
+	bottom: 3em;
+	/*background: #54419B;*/
+	background: #634BBA;
+	padding: 5px;
+}
+
+body main code {
+	font-family: inherit;
+}
+
+blink, .blink {
+	font-weight: 100;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8A79CA;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8A79CA;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8A79CA;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8A79CA;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #8A79CA;
+  }
+}
+
