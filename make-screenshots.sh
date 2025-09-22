@@ -12,11 +12,8 @@
 # Webdesigns
 # 
 WEBDESIGNS=(
-	"eckig"
-	"maltes-blog"
-	"maltes-blog2"
-	"orange"
-	"template4"
+	#"todo"
+	"todo2"
 )
 
 
@@ -90,7 +87,7 @@ msg 'Scaling down screenshots.'
 for design in ${WEBDESIGNS[@]}
 do
     msg "... ${_ANSI_COLOR_YELLOW}${design}${_ANSI_COLOR_WHITE}"
-    convert "img/${design}.png" -resize 30% "img/${design}-small.png"
+    magick convert "img/${design}.png" -resize 30% "img/${design}-small.png"
     
 done
 

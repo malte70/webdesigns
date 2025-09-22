@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	font: 20px "Gochi Hand", "Segoe UI Script", script;
+	background: #dfdfdf;
+}
+h1 {
+	text-align: center;
+}
+#todo {
+	max-width: 25em;
+	margin: 0 auto 2em;
+	border: 1px solid #ffd300;
+	background: #ffa;
+	color: #666;
+	padding: .5em;
+}
+#todo del {
+	/*color: #6A6A6A;*/
+	color: #aaa;
+}
+#todo em {
+	color: #4BE03C;
+}
